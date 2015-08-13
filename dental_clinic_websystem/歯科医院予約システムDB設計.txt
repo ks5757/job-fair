@@ -1,0 +1,42 @@
+歯科医院予約システム
+
+DB設計
+
+//利用者テーブル
+create table user(
+user_id int(8) not null auto_increment,
+login_auth_id varchar(64) not null,
+primary key(user_id)
+);
+
+
+ログインテーブル
+ 	create table login(
+ 	login_id varchar(64) not null,
+ 	login_passwd varchar (64) not null,
+ 	last_login datetime(),
+ 	primary key(login_id);
+ 	);
+ 
+//受診履歴テーブル
+create table presentedlist(
+ present_id int(256) not null auto_increment,
+ user_id int(8) not null,
+ present_date datetime not null,
+ present_detail varchar(625) not null,
+ primary key(present_id),
+ foreign key(user_id)
+ references user(usr_id)
+)engine=InnoDB;
+
+//予約履歴テーブル
+create table reservelist(
+reserve_id int(256) not null auto_increment,
+user_id int(8) not null,
+reserve_date datetime not null,
+reserve_detail varchar(625) not null,
+reserve_done_flag boolean not null,
+primary key(reserve_id),
+foreign key(user_id)
+references user(user_id)
+)engine=InnoDB;

@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/*ヘッダー（サイト名ロゴが入ったブロック）
+---------------------------------------------------------------------------*/
+/*ヘッダーブロック*/
+header {
+	background-image: none;
+}
+header .inner {
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+/*h1ロゴの設定*/
+header .inner h1 {
+	position: static;
+	padding-top: 20px;
+}
+header h1 img {
+	width: 70%;	/*画面に対してロゴ画像を70％の幅に*/
+	height: auto;
+}
+/*電話番号ボックスの設定*/
+header .inner address {
+	position: static;
+	padding-bottom: 20px;
+}
+
+
+/*上部のメインメニュー
+---------------------------------------------------------------------------*/
+/*メニューブロック設定*/
+nav#menu {
+	height: auto;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+nav#menu ul {
+	width: auto;
+}
+/*メニュー１個ごとの設定*/
+nav#menu ul li {
+	float: none;
+	width: 100%;
+	border: none !important;
+	background-color: #665e4a;	/*背景色（古いブラウザだとここの色のみが出ます）*/
+	background-image: url(../images/btn_arrow.png), -webkit-gradient(linear, left top, left bottom, from(#b7b3aa), to(#665e4a));	/*グラデーション*/
+	background-image: url(../images/btn_arrow.png), -webkit-linear-gradient(#b7b3aa, #716a57 49%, #665e4a 50%);	/*同上*/
+	background-image: url(../images/btn_arrow.png), linear-gradient(#b7b3aa, #716a57 49%, #665e4a 50%);			/*同上*/
+	background-repeat: no-repeat;
+	background-position: right center;
+	text-align: left;
+}
+nav#menu ul li a {
+	line-height: normal;
+	padding: 15px 0px 15px 20px;	/*メニュー内の余白。上、右、下、左*/
+}
+/*英語表記の設定*/
+nav#menu ul li a span {
+	display: none;	/*表示させない設定*/
+}
+
+/*コンテンツ（main,subを囲むブロック）
+---------------------------------------------------------------------------*/
+#contents {
+	width: auto;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
+/*contents-in,main,subコンテンツ
+---------------------------------------------------------------------------*/
+#contents-in, #main, body.c2 #main, #sub {
+	float: none;
+	width: auto;
+}
+
+/*sideコンテンツ
+---------------------------------------------------------------------------*/
+#side {
+	display: none;	/*表示させない設定*/
+}
+
+/*トップページのメイン画像。表示させたいなら、style-m.cssの同じ箇所のタグをコピペする。
+---------------------------------------------------------------------------*/
+#mainimg {
+	display: none;
+}
+
+/*トップページ内「更新情報・お知らせ」ブロック
+---------------------------------------------------------------------------*/
+section#new h2.open {
+	background: url(../images/btn_minus.png) no-repeat right center, -webkit-gradient(linear, left top, left bottom, from(#b7b3aa), to(#665e4a));	/*マイナスアイコンとグラデーション*/
+	background: url(../images/btn_minus.png) no-repeat right center, -webkit-linear-gradient(#b7b3aa, #716a57 49%, #665e4a 50%);					/*同上*/
+	background: url(../images/btn_minus.png) no-repeat right center, linear-gradient(#b7b3aa, #716a57 49%, #665e4a 50%);							/*同上*/
+}
+section#new h2.close {
+	background: url(../images/btn_plus.png) no-repeat right center, -webkit-gradient(linear, left top, left bottom, from(#b7b3aa), to(#665e4a));	/*プラスアイコンとグラデーション*/
+	background: url(../images/btn_plus.png) no-repeat right center, -webkit-linear-gradient(#b7b3aa, #716a57 49%, #665e4a 50%);						/*同上*/
+	background: url(../images/btn_plus.png) no-repeat right center, linear-gradient(#b7b3aa, #716a57 49%, #665e4a 50%);								/*同上*/
+}
+/*ブロック全体の設定*/
+#new dl {
+	height: auto;
+	padding-left: 0;
+}
+/*日付設定*/
+#new dt {
+	float: none;
+	width: auto;
+}
+/*記事設定*/
+#new dd {
+	padding-left: 0;
+}
+
+/*テーブル１
+---------------------------------------------------------------------------*/
+/*テーブル内の右側*/
+.ta1 td{
+	width: auto;
+	padding: 2px;
+}
+/*テーブル内の左側の見出し部分*/
+.ta1 th{
+	width: 100px;
+	padding: 2px;
+}
+
+/*service.html内の一覧の各ブロック
+---------------------------------------------------------------------------*/
+/*ボックス内の段落タグ設定*/
+#main section.list article p {
+	margin-left: 0;
+}
+/*ボックス内の写真設定*/
+#main .list article figure img {
+	width: 40%;
+	height: auto;
+	margin-right: 5px;
+}
+
+/*form設定
+---------------------------------------------------------------------------*/
+
+form #id, #passwd{
+	margin:0 auto;
+ }
+ 
+form p{
+	margin: 0 ;
+}
+ 
+form input[type="submit"]{
+	margin-left: 15px;
+	margin-right: 15px;	
+}
+/*その他
+---------------------------------------------------------------------------*/
+/*<body class="s-n">指定の場合にsubブロックも表示させない設定*/
+body.s-n #sub {
+	display: none;
+}
+/*幅一杯に画像を表示させる*/
+img.wa {
+	height: auto;
+	width: 100%;
+}
+/*メニュー折りたたみ設定*/
+#top #menubar_hdr {
+	display: none;
+}
+#menubar_hdr {
+	display: inline;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#e5e5e5));
+	background-image: -webkit-linear-gradient(#fbfbfb, #e5e5e5);
+	background-image: linear-gradient(#fbfbfb, #e5e5e5);
+	padding: 10px;
+	border: 1px solid #cfcfcf;
+	border-radius: 0px 0px 6px 6px;
+}

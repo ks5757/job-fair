@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*ヘッダー（サイト名ロゴが入ったブロック）
+---------------------------------------------------------------------------*/
+/*ヘッダーブロック*/
+header {
+	background-image: none;
+}
+header .inner {
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+/*h1ロゴの設定*/
+header .inner h1 {
+	position: static;
+	padding-top: 20px;
+}
+/*電話番号ボックスの設定*/
+header .inner address {
+	position: static;
+	padding-bottom: 20px;
+}
+
+/*上部のメインメニュー
+---------------------------------------------------------------------------*/
+/*メニューブロック設定*/
+nav#menu {
+	height: auto;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+nav#menu ul {
+	width: auto;
+}
+/*メニュー１個ごとの設定*/
+nav#menu ul li {
+	width: 50%;	/*メニュー幅*/
+	border: none !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#b7b3aa), to(#665e4a));	/*グラデーション*/
+	background-image: -webkit-linear-gradient(#b7b3aa, #716a57 49%, #665e4a 50%);	/*同上*/
+	background-image: linear-gradient(#b7b3aa, #716a57 49%, #665e4a 50%);			/*同上*/
+	margin-bottom: 1%;
+}
+/*奇数番目のメニューの設定*/
+nav#menu ul li:nth-child(odd) {
+	width: 49%;	/*メニュー幅*/
+	margin-right: 1%;
+}
+/*最後のメニューの設定*/
+nav#menu ul li:last-child {
+	margin-bottom: 30px;
+}
+
+/*コンテンツ（main,subを囲むブロック）
+---------------------------------------------------------------------------*/
+#contents {
+	width: auto;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
+/*contents-in,main,subコンテンツ
+---------------------------------------------------------------------------*/
+#contents-in, #main, body.c2 #main, #sub {
+	float: none;
+	width: auto;
+}
+
+/*sideコンテンツ
+---------------------------------------------------------------------------*/
+#side {
+	display: none;	/*表示させない設定*/
+}
+
+/*トップページのメイン画像
+---------------------------------------------------------------------------*/
+#mainimg {
+	margin: 0px 6px 1%;
+}
+#mainimg aside {
+	height: auto;
+	width: 100%;
+}
+#mainimg aside img {
+	vertical-align: bottom;
+}
+#slide_image {
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+#slide_image2 {
+	height: auto;
+	width: 100%;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+
+/*form設定
+---------------------------------------------------------------------------*/
+
+form #id, #passwd{
+	margin-left: 150px;
+	
+ }
+ 
+form p{
+	text-align: center;
+}
+ 
+form input[type="submit"]{
+	margin-left: 30%;
+	margin-right: 30%;	
+}
+
+/*その他
+---------------------------------------------------------------------------*/
+/*<body class="s-n">指定の場合にsubブロックも表示させない設定*/
+body.s-n #sub {
+	display: none;
+}
+/*幅一杯に画像を表示させる*/
+img.wa {
+	height: auto;
+	width: 100%;
+}
+/*メニューアイコンを非表示に*/
+#menubar_hdr {
+	display: none;
+}
