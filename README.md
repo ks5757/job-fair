@@ -1,0 +1,7 @@
+# job-fair
+job fair
+
+CalculaterSampleはAndoroidの電卓アプリです。授業課題で個人で作成しました。
+N-backはJavaappletで作成した記憶ゲームです。授業課題でチームで作成しました。
+dental_clinic_websystemは、歯科医院を想定したウェブ予約システムとそのプロジェクト・マネジメントです。
+授業で個人で現在進行形で行っています。HTMLテンプレートを用いて、phpのサーバサイドの処理を主に書いています。
